@@ -1,4 +1,9 @@
 /* ----- base styles ----*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body{
 font-family: "Roboto", sans-serif;
 color:#434455;
@@ -23,7 +28,13 @@ list-style-type: none;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.container{
+  width: 1128px;
+  padding: 0 16px;
+  margin: 0 auto;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
 .main-subtitle {
   font-weight: 500;
 font-size: 20px;
@@ -77,13 +88,29 @@ color: #434455;
 /* ----- hero section -----*/
 .hero-section {
     background-color:#2E2F42;
+    width: 1440px;
+    height: 600px;
 }
 .hero-title {
 font-size: 56px;
 color: #fff;
+width: 496px;
 }
 
 .hero-button{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: row;
+gap: 10px;
+border-radius: 4px;
+padding: 16px 32px;
+width: 169px;
+height: 56px;
+white-space: nowrap;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+font-weight: 500;
+font-size: 16px;
 background: #4d5ae5;
 font-weight: 500;
 font-size: 16px;
@@ -91,10 +118,11 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
 cursor: pointer;
+
 }
 .hero-button:focus,
 .hero-button:hover{
-    background: #404bbf;
+background: #404bbf;
 }
 
 /* ----- benefits section -----*/
@@ -105,7 +133,9 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+width: 264px;
 }
+
 
 /*------ team section ------*/
 
@@ -158,4 +188,5 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+width: 264px;
 }
